@@ -1,0 +1,19 @@
+{
+  "name": "saucedemo-playwright",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright + TypeScript automation for SauceDemo, traced to Azure DevOps test cases",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:tc39": "playwright test --grep @TC39",
+    "test:smoke": "playwright test --grep @smoke",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2"
+  }
+}
